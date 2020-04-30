@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="loginAction" extends="struts-default">
+
+		<action name="login" class="com.cn.attence.action.LoginAction">
+			<result name="success">/index.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="showStudent" class="com.cn.attence.action.ShowstudentAction">
+			<result name="success">/showstudent.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="addStudent" class="com.cn.attence.action.AddstudentAction">
+			<result name="success" >/index.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="updateStudent" class="com.cn.attence.action.UpdatestudentAction">
+			<result name="success" >/index.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="statistic" class="com.cn.attence.action.StatisticAction">
+			<result name="success">/statistic.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+			<action name="register" class="com.cn.attence.action.RegisterAction">
+			<result name="success">/registsucd.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="delete" class="com.cn.attence.action.DeleteAction">
+			<result name="success">/dele.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+</struts>   
